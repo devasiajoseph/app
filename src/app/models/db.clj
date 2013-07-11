@@ -20,5 +20,5 @@
 
 (defn get-user [id]
   (first (select users
-                 (where {:id id})
+                 (where {:id id})x
                  (limit 1))))

@@ -17,4 +17,4 @@
   (http-kit/run-server
     (if (dev? args) (reload/wrap-reload war-handler) war-handler)
     {:port (port args)})
-  (timbre/info "server started on port"))
+  (timbre/info "http-kit server started on port"))
