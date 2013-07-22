@@ -1,5 +1,6 @@
 (ns app.routes.home
-  (:use compojure.core)
+  (:use compojure.core
+        app.views.pages)
   (:require [app.views.layout :as layout]
             [app.util :as util]))
 
@@ -10,9 +11,15 @@
 (defn about-page []
   (layout/render "about.html"))
 
+(defn angular [] 
+  (get-raw-page "index.html")
+  )
+
 (defroutes home-routes
   (GET "/" [] (home-page))
-  (GET "/about" [] (about-page)))
+  (GET "/about" [] (about-page))
+  (GET "/angular" [] (angular))
+  )
 
 
 ;;(ctrl post-facebook )

@@ -1,6 +1,7 @@
 (ns app.views.layout
   (:use noir.request)
-  (:require [clabango.parser :as parser]))
+  (:require [clabango.parser :as parser]
+            ))
 
 (def template-path "app/views/templates/")
 

@@ -7,6 +7,7 @@
    [compojure "1.1.5"]
    [ring-server "0.2.8"]
    [clabango "0.5"]
+   [enlive "1.1.1"]
    [com.taoensso/timbre "2.1.2"]
    [com.postspectacular/rotor "0.1.0"]
    [com.taoensso/tower "1.7.1"]
@@ -20,7 +21,9 @@
      javax.jms/jms
      com.sun.jdmk/jmxtools
      com.sun.jmx/jmxri]]
-   [http-kit "2.1.3"]]
+   [http-kit "2.1.3"]
+   [clojurewerkz/cassaforte "1.0.1"]
+   [cc.qbits/alia "1.6.1"]]
   :ring
   {:handler app.handler/war-handler,
    :init app.handler/init,
